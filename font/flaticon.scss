@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?99ec26adccb0b0152df89e59a2e1de68") format("truetype"),
+url("./flaticon.woff?99ec26adccb0b0152df89e59a2e1de68") format("woff"),
+url("./flaticon.woff2?99ec26adccb0b0152df89e59a2e1de68") format("woff2"),
+url("./flaticon.eot?99ec26adccb0b0152df89e59a2e1de68#iefix") format("embedded-opentype"),
+url("./flaticon.svg?99ec26adccb0b0152df89e59a2e1de68#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "man-boxing": "\f101",
+    "buddhist-yoga-pose": "\f102",
+    "man-lifting-weight": "\f103",
+    "weightlifting": "\f104",
+    "treadmill": "\f105",
+    "fitness": "\f106",
+    "stationary-bike": "\f107",
+    "dancing": "\f108",
+    "dancing-1": "\f109",
+);
+
+.flaticon-man-boxing:before {
+    content: map-get($flaticon-map, "man-boxing");
+}
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-man-lifting-weight:before {
+    content: map-get($flaticon-map, "man-lifting-weight");
+}
+.flaticon-weightlifting:before {
+    content: map-get($flaticon-map, "weightlifting");
+}
+.flaticon-treadmill:before {
+    content: map-get($flaticon-map, "treadmill");
+}
+.flaticon-fitness:before {
+    content: map-get($flaticon-map, "fitness");
+}
+.flaticon-stationary-bike:before {
+    content: map-get($flaticon-map, "stationary-bike");
+}
+.flaticon-dancing:before {
+    content: map-get($flaticon-map, "dancing");
+}
+.flaticon-dancing-1:before {
+    content: map-get($flaticon-map, "dancing-1");
+}
